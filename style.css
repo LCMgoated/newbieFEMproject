@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+
+
+/*-----------------------STYLING--------------- */
+
+
+
+/*General Styling*/
+
+body{
+  background-color: rgb(204, 203, 203);
+}
+
+
+h2, h3 {
+  margin-bottom: 20px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+
+.box {
+  padding: 50px;
+}
+
+
+
+.cta,
+.information p {
+  color: hsl(204, 43%, 93%);
+}
+
+/*Mobile Responsive Styling */
+
+/*Mobile version is rows*/
+@media (min-width: 50em) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+.grid {
+  margin-top: 65px;
+}
+
+
+@media (max-width: 50em) {
+  .box {
+    padding: 40px 25px;
+  
+  }
+}
+
+/* main section box styling*/
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+
+.main {
+  grid-column: span 2;
+}
+
+
+.main {
+  background-color: white;
+}
+
+
+
+.title {
+  font-family: 'Karla', sans-serif;
+  font-size: 27px;
+  color: hsl(179, 62%, 43%);
+}
+
+
+
+.main h3 {
+  width: 95%;
+  margin-bottom: 20px;
+  color: hsl(71, 73%, 54%);
+}
+
+.main p {
+  color: hsl(218, 22%, 67%);
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 50em) {
+  .main p {
+    width: 95%;
+  }
+}
+
+/*CTA section styling*/
+
+.cta {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.price {
+  font-size: 35px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.price::after {
+  content: 'per month';
+  position: absolute;
+  opacity: 50%;
+  color: white;
+  inset: 10px 80px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.cta p {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.btnstyle a {
+  color: white;
+  font-weight: 400;
+  font-family: 'Karla', sans-serif;
+}
+
+.btnstyle {
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  padding-block: 16px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.175) ;
+}
+
+
+.btnstyle:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.btnstyle:hover a{
+  color: hsl(71, 73%, 54%);;
+}
+
+
+/*Information Section Styling*/
+.information {
+  background-color: hsl(179, 62%, 46%);
+}
+
+.information p {
+  
+  font-size: 16px;
+  line-height: 1.75rem;
+  color: hsla(203, 44%, 93%, 0.685);
+}
+
+
+
+
+
+/*LAYOUT*/
+@media (max-width: 50em) {
+  .container {
+    width: 60%;
+    margin-inline: auto;
+    
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin-inline: auto;
+  
+}
